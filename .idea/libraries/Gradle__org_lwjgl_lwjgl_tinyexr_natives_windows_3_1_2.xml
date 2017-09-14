@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.lwjgl:lwjgl-tinyexr:natives-windows:3.1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyexr/3.1.2/cc58bfbcc9a8fe2a5690cf313e38d04ab2720e92/lwjgl-tinyexr-3.1.2-natives-windows.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyexr/3.1.2/9df7b6ae4e7d8414ed40507534b601ed5f92aef/lwjgl-tinyexr-3.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

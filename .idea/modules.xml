@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PlanetForge.iml" filepath="$PROJECT_DIR$/.idea/modules/PlanetForge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PlanetForge_main.iml" filepath="$PROJECT_DIR$/.idea/modules/PlanetForge_main.iml" group="PlanetForge" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PlanetForge_test.iml" filepath="$PROJECT_DIR$/.idea/modules/PlanetForge_test.iml" group="PlanetForge" />
+    </modules>
+  </component>
+</project>
