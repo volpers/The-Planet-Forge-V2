@@ -5,7 +5,6 @@ import org.opengl.stuff.engine.Utils;
 import org.opengl.stuff.engine.Window;
 import org.opengl.stuff.engine.graph.GameObject;
 import org.opengl.stuff.engine.graph.MatrixTransformations;
-import org.opengl.stuff.engine.graph.Mesh;
 import org.opengl.stuff.engine.graph.ShaderProgram;
 
 import java.util.ArrayList;
@@ -42,6 +41,7 @@ public class Renderer {
         //initMatrizes(window);
         shaderProgram.createUniform("projectionMatrix");
         shaderProgram.createUniform("worldMatrix");
+        shaderProgram.createUniform("texture_sampler");
     }
 
     private void initMatrizes(Window window) {
@@ -62,7 +62,7 @@ public class Renderer {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     }
 
-    public void render(Window window, Mesh mesh) {
+    public void render(Window window) {
         clear();
 
         if (window.isResized()) {
@@ -74,6 +74,7 @@ public class Renderer {
 
         projectionMatrix = matrixTransformations.getProjectionMatrix(FOV, window.getWidth(), window.getHeight(), Z_NEAR, Z_FAR);
         shaderProgram.setUniform("projectionMatrix", projectionMatrix);
+        shaderProgram.setUniform("texture_sampler", 0);
 
         for (GameObject gameObject : gameObjectList) {
             Matrix4f worldMatrix = matrixTransformations.getWorldMatrix(gameObject.getPosition(), gameObject.getScale(), gameObject.getRotation());

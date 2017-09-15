@@ -34,6 +34,10 @@ public class ShaderProgram {
         fragmentShaderId = createShader(shaderCode, GL_FRAGMENT_SHADER);
     }
 
+    public void setUniform(String uniformName, int value) {
+        glUniform1i(uniforms.get(uniformName), value);
+    }
+
     public void setUniform(String uniformName, Matrix4f matrix) {
         try (MemoryStack stack = MemoryStack.stackPush()) {
             FloatBuffer buffer = stack.mallocFloat(16);
